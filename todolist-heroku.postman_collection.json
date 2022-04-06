@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "414dd8dc-222d-4980-9b44-c21f5ed1fb96",
+		"name": "todolist-heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllTodos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://obscure-woodland-45420.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"obscure-woodland-45420",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addNewTodo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"wash dishes\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://obscure-woodland-45420.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"obscure-woodland-45420",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAllTodos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://obscure-woodland-45420.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"obscure-woodland-45420",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteTodo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://obscure-woodland-45420.herokuapp.com/todos/fcd1443f-f679-4a8c-9beb-36f51e31f870",
+					"protocol": "https",
+					"host": [
+						"obscure-woodland-45420",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"fcd1443f-f679-4a8c-9beb-36f51e31f870"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editTodo",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"laundry\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://obscure-woodland-45420.herokuapp.com/todos/fcd1443f-f679-4a8c-9beb-36f51e31f870",
+					"protocol": "https",
+					"host": [
+						"obscure-woodland-45420",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"fcd1443f-f679-4a8c-9beb-36f51e31f870"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
